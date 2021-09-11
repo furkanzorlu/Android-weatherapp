@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ax"
+    tools:context=".MainActivity2"
+    android:id="@+id/asılrv"
+   >
+
+
+<ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+  android:layout_above="@+id/bas"
+
+    tools:ignore="NotSibling">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bas">
+
+
+        <TextView
+            android:id="@+id/sehiradı"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+             android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:text="Şehir Adı"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="27sp" />
+
+    <LinearLayout
+        android:id="@+id/lledt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sehiradı"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+             android:textAlignment="center"
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:hint="Şehir Adı Giriniz"
+            />
+
+        <ImageView
+            android:id="@+id/serachh"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_baseline_search_24"
+
+            />
+
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/temparatureee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lledt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="23"
+            android:textColor="@color/white"
+            android:textSize="70dp" />
+
+        <TextView
+            android:id="@+id/temparatureeee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lledt"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="10dp"
+
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="°C"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/IVıcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/temparatureee"
+            android:layout_centerHorizontal="true"
+
+
+            android:layout_marginEnd="10dp"
+
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tvcondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/IVıcon"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Şart"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvcondition"
+            android:id="@+id/gunluk">
+
+            <ImageView
+                android:id="@+id/bugunıcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/yarın1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv3"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:text="asdasd"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/yarın2"
+                android:layout_width="120dp"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv3"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="10dp"
+                android:text="asdasd"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/yarınıcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/bugunıcon"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/yarın3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/yarın1"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="25dp"
+                android:text="asdasd"
+
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/yarın4"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/yarın2"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="20dp"
+                android:text="asdasd"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/yarınıcon2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:layout_below="@+id/yarınıcon"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/yarın5"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/yarın3"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="35dp"
+                android:text="asdasd"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/yarın6"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/yarın4"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="20dp"
+                android:text="asdasd"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rv1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/rv3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/back">
+
+            <TextView
+                android:id="@+id/hissedilen"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:text="Hissedilen"
+                android:textColor="#E7F2F9" />
+
+            <TextView
+                android:id="@+id/hissedilen1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hissedilen"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/nem"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hissedilen1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:text="Nem"
+                android:textColor="#E7F2F9" />
+
+            <TextView
+                android:id="@+id/nem1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nem"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/bulut"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nem1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:text="Bulut oranı"
+                android:textColor="#E7F2F9" />
+
+            <TextView
+                android:id="@+id/bulut1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bulut"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/wind"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="16dp"
+                android:text="Rüzgar hızı"
+
+                android:textColor="#E7F2F9" />
+
+            <TextView
+                android:id="@+id/wind1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/wind"
+                android:layout_marginLeft="200dp"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/basınc"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wind1"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="16dp"
+                android:text="Basınç"
+                android:textColor="#E7F2F9" />
+
+            <TextView
+                android:id="@+id/basınc1"
+                android:layout_width="120dp"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/basınc"
+                android:layout_marginLeft="200dp"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/uv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/basınc1"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="16dp"
+                android:text="Uv endeksi"
+                android:textColor="#E7F2F9" />
+
+            <TextView
+                android:id="@+id/uv1"
+                android:layout_width="120dp"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/uv"
+                android:layout_marginLeft="200dp"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+
+        </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rv3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/gunluk"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvweather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </RelativeLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rv1"
+            android:text="bassss"
+            android:visibility="gone"
+
+          >
+
+
+        </Button>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/back"
+            android:layout_below="@id/rv1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/rvhava"
+            >
+
+            <TextView
+                android:id="@+id/kalite"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:text="Hava Kalite İndeksi"
+                android:textColor="#E7F2F9" />
+
+            <TextView
+                android:id="@+id/kalite1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kalite"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+
+                />
+            <TextView
+                android:id="@+id/kalite2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/kalite"
+                android:text="Tam hava kalitesi tahmini>"
+                android:textSize="15dp"
+                android:textStyle="bold"
+            android:textColor="@color/white"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>

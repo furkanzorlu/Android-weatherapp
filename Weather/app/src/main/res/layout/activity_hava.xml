@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hava"
+    android:id="@+id/rvhavaa">
+ <ImageView
+     android:layout_width="30dp"
+     android:layout_height="30dp"
+     android:layout_marginLeft="10dp"
+     android:layout_marginTop="10dp"
+     android:id="@+id/back"
+     android:src="@drawable/backk">
+
+ </ImageView>
+  <TextView
+      android:id="@+id/kalite23"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_marginLeft="30dp"
+      android:layout_marginTop="50dp"
+      android:text="Hava Kalite İndeksi"
+      android:textSize="30sp">
+
+  </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/yorum"
+        android:layout_marginLeft="30dp"
+        android:text="Hava kalitesi iyi.Yürüyüş için harika bir gün!"
+        android:layout_below="@id/hava">
+
+    </TextView>
+
+  <TextView
+      android:id="@+id/hava"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_below="@+id/kalite23"
+      android:layout_marginTop="50dp"
+      android:layout_marginLeft="30dp"
+      android:textColor="#32cd32"
+      android:textSize="25sp">
+
+  </TextView>
+
+
+</RelativeLayout>
